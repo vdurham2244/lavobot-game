@@ -5,12 +5,15 @@ export default defineConfig({
   base: '/lavobot-game/',
   plugins: [react()],
   assetsInclude: ['**/*.glb'],
+  publicDir: 'public',
   server: {
     host: true,
     open: true
   },
   build: {
     chunkSizeWarningLimit: 1600,
+    outDir: 'dist',
+    assetsDir: 'assets',
     rollupOptions: {
       output: {
         manualChunks: {
