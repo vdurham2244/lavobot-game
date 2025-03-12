@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   base: '/lavobot-game/',
   plugins: [react()],
-  assetsInclude: ['**/*.glb'],
   publicDir: 'public',
+  assetsInclude: ['**/*.glb'],
   server: {
     host: true,
     open: true

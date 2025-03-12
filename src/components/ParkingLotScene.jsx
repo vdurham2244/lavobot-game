@@ -126,7 +126,7 @@ export default function ParkingLotScene({ onStatsUpdate, movement }) {
   const [isMobile, setIsMobile] = useState(false);
 
   // Load the LavoBot model with caching
-  const { scene: lavobotScene } = useGLTF('/lavobot.glb', true);
+  const { scene: lavobotScene } = useGLTF('./lavobot.glb', true);
   
   // Memoize static elements
   const staticElements = useMemo(() => ({

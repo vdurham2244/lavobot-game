@@ -145,7 +145,7 @@ export default function DrivewayScene({ onStatsUpdate, movement }) {
   const [isMobile, setIsMobile] = useState(false);
 
   // Load the LavoBot model with caching
-  const { scene: lavobotScene } = useGLTF('/lavobot.glb', true);
+  const { scene: lavobotScene } = useGLTF('./lavobot.glb', true);
 
   // Update isInPool to include planter collision
   const isInPool = (x, z) => {
