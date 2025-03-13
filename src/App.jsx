@@ -182,7 +182,7 @@ function App() {
       {isMobile && (
         <div style={{
           position: 'fixed',
-          bottom: '140px',
+          bottom: '40px',
           left: '50%',
           transform: 'translateX(-50%)',
           display: 'grid',
@@ -292,7 +292,7 @@ function App() {
       {/* Scene Selector */}
       <div style={{
         position: 'absolute',
-        bottom: isMobile ? '20px' : '20px',
+        bottom: isMobile ? '240px' : '20px',
         left: '50%',
         transform: 'translateX(-50%)',
         display: 'flex',
