@@ -292,30 +292,32 @@ function App() {
       {/* Scene Selector */}
       <div style={{
         position: 'absolute',
-        bottom: isMobile ? '240px' : '20px',
-        left: '50%',
-        transform: 'translateX(-50%)',
+        top: isMobile ? '10px' : 'auto',
+        bottom: isMobile ? 'auto' : '20px',
+        left: isMobile ? '10px' : '50%',
+        transform: isMobile ? 'none' : 'translateX(-50%)',
         display: 'flex',
-        flexDirection: isMobile ? 'row' : 'row',
-        gap: '10px',
-        background: 'rgba(0, 0, 0, 0.7)',
-        padding: '10px',
-        borderRadius: '10px',
-        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+        flexDirection: 'column',
+        gap: '5px',
+        background: 'rgba(0, 0, 0, 0.85)',
+        padding: isMobile ? '10px' : '10px',
+        borderRadius: '15px',
+        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
+        border: '2px solid rgba(255, 255, 255, 0.1)',
         zIndex: 1000,
         pointerEvents: 'auto'
       }}>
         <button
           onClick={() => setCurrentScene('parkingLot')}
           style={{
-            padding: isMobile ? '8px 15px' : '10px 20px',
+            padding: isMobile ? '8px 12px' : '10px 20px',
             background: currentScene === 'parkingLot' ? '#4CAF50' : '#2C3E50',
             color: 'white',
             border: 'none',
             borderRadius: '5px',
             cursor: 'pointer',
             transition: 'background 0.3s',
-            fontSize: isMobile ? '14px' : '16px',
+            fontSize: isMobile ? '12px' : '16px',
             whiteSpace: 'nowrap'
           }}
         >
@@ -324,14 +326,14 @@ function App() {
         <button
           onClick={() => setCurrentScene('driveway')}
           style={{
-            padding: isMobile ? '8px 15px' : '10px 20px',
+            padding: isMobile ? '8px 12px' : '10px 20px',
             background: currentScene === 'driveway' ? '#4CAF50' : '#2C3E50',
             color: 'white',
             border: 'none',
             borderRadius: '5px',
             cursor: 'pointer',
             transition: 'background 0.3s',
-            fontSize: isMobile ? '14px' : '16px',
+            fontSize: isMobile ? '12px' : '16px',
             whiteSpace: 'nowrap'
           }}
         >
@@ -340,14 +342,14 @@ function App() {
         <button
           onClick={() => setCurrentScene('parkingGarage')}
           style={{
-            padding: isMobile ? '8px 15px' : '10px 20px',
+            padding: isMobile ? '8px 12px' : '10px 20px',
             background: currentScene === 'parkingGarage' ? '#4CAF50' : '#2C3E50',
             color: 'white',
             border: 'none',
             borderRadius: '5px',
             cursor: 'pointer',
             transition: 'background 0.3s',
-            fontSize: isMobile ? '14px' : '16px',
+            fontSize: isMobile ? '12px' : '16px',
             whiteSpace: 'nowrap'
           }}
         >
